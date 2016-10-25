@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checker Question</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <style>
+        .game-board {
+            padding: 0;
+        }
+
+        .game-space {
+            display: inline-block;
+            padding: 5px;
+            width: 49px;
+            content: ' ';
+            height: 48px;
+            border: 1px solid #777;
+            border-left: 0;
+        }
+        .game-space:first-child {
+            border-left: 1px solid;
+            width: 48px;
+        }
+
+        .game-piece {
+            width: 40px;
+            height: 40px;
+            margin-left: 5px;
+            margin-top: 5px;
+            border: 1px solid #333;
+            box-shadow: 2px 2px 4px #BBB;
+            border-radius: 50%;
+        }
+
+        .game-piece.white {
+            background:  white;
+        }
+
+        .game-piece.black {
+            background: #333333;
+        }
+
+    </style>
+</head>
+<body ng-app="mathQuestions">
+    <checker-question></checker-question>
+
+    <script src="checker-question/checker-question.js"></script>
+</body>
+</html>

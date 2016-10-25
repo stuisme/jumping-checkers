@@ -1,0 +1,11 @@
+<div class="checker-question">
+    <div>
+        Moves: {{ $ctrl.moveCount }}
+    </div>
+    <div class="game-board">
+        <div class="game-space" ng-repeat="space in $ctrl.layout">
+            <div ng-if="space.color != ''" class="game-piece {{space.color}}" ng-click="$ctrl.move($index)"></div>
+        </div>
+    </div>
+    <button type="button" ng-click="$ctrl.reset()">Reset</button>
+</div>
